@@ -2,6 +2,7 @@ import Foundation
 import SwiftSoup
 
 @available(macOS 13.0, *)
+@available(iOS 15.0, *)
 public struct ArxivAPI {
     private static let taxonomyURL: URL = URL(string: "https://arxiv.org/category_taxonomy")!
     
@@ -53,6 +54,7 @@ public struct ArxivAPI {
 
 // Given a URL, fetches the html content as a string
 @available(macOS 12.0, *)
+@available(iOS 15.0, *)
 private func fetch(url: URL) async -> String? {
     do {
         let (data, response) = try await URLSession.shared.data(from: url)
