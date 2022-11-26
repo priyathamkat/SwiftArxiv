@@ -2,7 +2,7 @@ import Foundation
 import SwiftSoup
 
 @available(macOS 13.0, *)
-@available(iOS 15.0, *)
+@available(iOS 16.0, *)
 public struct ArxivAPI {
     private static let taxonomyURL: URL = URL(string: "https://arxiv.org/category_taxonomy")!
     
